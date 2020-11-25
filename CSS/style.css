@@ -1,0 +1,41 @@
+/**/
+
+.gridContainer {
+    display: grid;
+}
+
+.gridHeader > h1{
+    display: grid;
+    grid-template-columns: 1, 100%;
+    text-align: center;
+}
+
+.gridHeader > nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    text-decoration: none;
+    width: 100%;
+    height: 100px;
+}
+
+.gridSection1 {}
+
+.gridSection2 {}
+
+.gridSection3 {}
+
+.gridSection4 {}
+
+.gridSection5 {}
+
+.gridSection6 {}
+/**/
+
+.gridFooter { 
+    display: grid;
+    grid-template-columns: 1, 100%;
+    text-align: center;
+}

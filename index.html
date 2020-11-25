@@ -7,65 +7,67 @@
     <link rel="stylesheet" href="CSS\style.css">
 </head>
 <body>
-    <!--Top page section-->
-    <header>
-        <h1>About me</h1>
-        <!-- Navigation bar-->
-        <nav>
-            <a href="index.html"><button>About</button></a>
-            <a href="contact.html"><button>Contact</button></a>
-            <a href="skills.html"><button>Skills</button></a>
-            <a href="projects.html"><button>Projects</button></a>
-        </nav>
-    </header>
-    <!--Main content section-->
-    <main>
-        <!--Section A-->
-        <section>
-            <img src="Assets\Guy.png" alt="Picture of Patrick Trollip dressed smart casual.">
-            <aside>
-                <h2>Patrick Trollip</h2>
-                <h3>Fullstack Web developer</h3>
-            </aside>
-        </section>
-        <!--Section B-->
-        <section>
-            <h3>Information</h3>
-            <p>
-                I am a graduate Fullstack web developer who studied at code institute. I have hands on experience using modern web technologies like
-                <em>HTML5</em>, <em>CSS3</em> and <em>ECMA script versions 5 and 6</em>. I have covered the frontend, backend of web development. I strive to 
-                continue to learn and land my first awesome job as a developer. I have experience colaborating with others on a project as well as following UX 
-                instructions to build the desired websites. My favorite language is Javascript and my favourite web development area is on the front end.
-                I am a creative person who is aiming to write clean and readable code that follows convention and good practices while striving to build secure
-                websites that are as accessible to as many people as possible to help maximize business and positive user experiences.
-                I strive to continue to learn and improve to be the best developer I can be. Finally a goal of mine would be to maybe develop a new language or 
-                style of making websites even better than we currently call conventional design or web2.0.
-            </p>
-        </section>
-        <!--Section C-->
-        <section>
-            <h3>Technologies used:</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>Python3</li>
-                <li>MongoDB</li>
-                <li>SQL</li>
-                <li>Nodejs</li>
-                <li>Bootstrap4</li>
-                <li>Jquery</li>
-                <li>Visual studio code editor</li>
-                <li>Heroku</li>
-                <li>Travis</li>
-                <li>AWS S3</li>
-            </ul>
-        </section>
-    </main>
-    <!--Bottom page section -->
-    <footer>
-        <h2>Made by Patrick Trollip 2020</h2>
-    </footer>
+    <div class="gridContainer">
+        <!--Top page section-->
+        <header class="gridHeader">
+            <h1>About me</h1>
+            <!-- Navigation bar-->
+            <nav>
+                <a href="index.html"><button>About</button></a>
+                <a href="contact.html"><button>Contact</button></a>
+                <a href="skills.html"><button>Skills</button></a>
+                <a href="projects.html"><button>Projects</button></a>
+            </nav>
+        </header>
+        <!--Main content section-->
+        <main>
+            <!--Section 1-->
+            <section class="gridSection1">
+                <img src="Assets\Guy.png" alt="Picture of Patrick Trollip dressed smart casual.">
+                <aside>
+                    <h2>Patrick Trollip</h2>
+                    <h3>Fullstack Web developer</h3>
+                </aside>
+            </section>
+            <!--Section 2-->
+            <section class="gridSection2">
+                <h3>Information</h3>
+                <p>
+                    I am a graduate Fullstack web developer who studied at code institute. I have hands on experience using modern web technologies like
+                    <em>HTML5</em>, <em>CSS3</em> and <em>ECMA script versions 5 and 6</em>. I have covered the frontend, backend of web development. I strive to 
+                    continue to learn and land my first awesome job as a developer. I have experience colaborating with others on a project as well as following UX 
+                    instructions to build the desired websites. My favorite language is Javascript and my favourite web development area is on the front end.
+                    I am a creative person who is aiming to write clean and readable code that follows convention and good practices while striving to build secure
+                    websites that are as accessible to as many people as possible to help maximize business and positive user experiences.
+                    I strive to continue to learn and improve to be the best developer I can be. Finally a goal of mine would be to maybe develop a new language or 
+                    style of making websites even better than we currently call conventional design or web2.0.
+                </p>
+            </section>
+            <!--Section 3-->
+            <section class="gridSection3">
+                <h3>Technologies used:</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Javascript</li>
+                    <li>Python3</li>
+                    <li>MongoDB</li>
+                    <li>SQL</li>
+                    <li>Nodejs</li>
+                    <li>Bootstrap4</li>
+                    <li>Jquery</li>
+                    <li>Visual studio code editor</li>
+                    <li>Heroku</li>
+                    <li>Travis</li>
+                    <li>AWS S3</li>
+                </ul>
+            </section>
+        </main>
+        <!--Bottom page section -->
+        <footer class="gridFooter">
+            <h2>Made by Patrick Trollip 2020</h2>
+        </footer>
+    </div>
     <!--Javascript link -->
     <script src="CustomJS\custom.js"></script>
 </body>
