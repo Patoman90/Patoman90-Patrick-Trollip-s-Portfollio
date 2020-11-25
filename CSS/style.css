@@ -10,19 +10,17 @@
 }
 
 header > h1{
-    grid-column-start: 1; 
-    grid-column-end: 4; 
-    grid-row-start: 1; 
-    grid-row-end: 2; 
+    background-color: midnightblue;
+    color:oldlace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header > nav{
-    grid-column-start: 1; 
-    grid-column-end: 4; 
-    grid-row-start: 2; 
-    grid-row-end: 3; 
+display: grid;
+grid-template-columns: repeat(4, 1fr);
 }
 
 button {
@@ -54,6 +52,10 @@ a {
 /**/
 
 footer { 
-    text-align: center;
+    background-color: midnightblue;
+    color:oldlace;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
