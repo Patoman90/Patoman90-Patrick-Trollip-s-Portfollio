@@ -1,13 +1,5 @@
-/**/
 
-.gridContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-auto-rows: 100px; 
-    background-color: midnightblue;
-    color:oldlace;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* Header section */
 
 header > h1{
     background-color: midnightblue;
@@ -23,6 +15,8 @@ display: grid;
 grid-template-columns: repeat(4, 1fr);
 }
 
+/* Nav buttons */
+
 button {
     text-decoration: none;
     width: 100%;
@@ -32,24 +26,74 @@ button {
     font-size: 25px;
 }
 
+/* Links */
+
 a {
     color: oldlace;
     text-decoration: none;
 }
 
-.gridSection1 {}
+/* Grid general styling */
 
 
-.gridSection2 {}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "sect1 sect1 sect1 sect1"
+        "sect2 sect2 sect2 sect2"
+        "sect3 sect3 sect3 sect3"
+        "sect4 sect4 sect4 sect4"
+        "sect5 sect5 sect5 sect5"
+        "sect6 sect6 sect6 sect6"
+    ;
+    background-color: midnightblue;
+    color: oldlace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-.gridSection3 {}
+/* Grid sections */
 
-.gridSection4 {}
+.gridSection1 {
+    grid-area: sect1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "me job";
+    margin-bottom: 1em;
+}
 
-.gridSection5 {}
+.gridSection1 img {
+    grid-area: me;
+    width: 100%;
+}
 
-.gridSection6 {}
-/**/
+.gridSection1 aside {
+    grid-area: job;
+    padding: 10px;
+}
+
+.gridSection2 {
+    grid-area: sect2;
+}
+
+.gridSection3 {
+    grid-area: sect3;
+}
+
+.gridSection4 {
+    grid-area: sect4;
+}
+
+.gridSection5 {
+    grid-area: sect5;
+}
+
+.gridSection6 {
+    grid-area: sect6;
+}
+
+/* Footer */
 
 footer { 
     background-color: midnightblue;
