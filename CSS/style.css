@@ -53,44 +53,128 @@ a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Grid sections */
+/* Grid section 1 General*/
 
 .gridSection1 {
     grid-area: sect1;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "me job";
+    grid-template-areas: "A B";
     margin-bottom: 1em;
 }
 
+/* Grid section 1 About page*/
+
 .gridSection1 img {
-    grid-area: me;
+    grid-area: A;
     width: 100%;
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 10px;
+    border: solid;
 }
 
 .gridSection1 aside {
-    grid-area: job;
+    grid-area: B;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Grid section 1 Contact page*/
+
+.gridSection1 #phone {
+    grid-area: A;
+    width: 100%;
+}
+
+.gridSection1 #phoneMe {
+    grid-area: B;
     padding: 10px;
 }
 
+
+/* Grid section 2 General*/
+
 .gridSection2 {
     grid-area: sect2;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sect2_h3 sect2_para";
+    margin-bottom: 1em;
 }
+
+/* Grid section 2 About page*/
+
+.gridSection2 h3 {
+    padding-top: 10px;
+    grid-area: sect2_h3;
+    text-align: center;
+    font-size: 25px;
+}
+
+.gridSection2 p {
+    grid-area: sect2_para;
+    text-align: justify;
+    line-height: 25px;
+    padding-right: 10px;
+}
+
+/* Grid section 3 General*/
 
 .gridSection3 {
     grid-area: sect3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: "sect3_h3 sect3_ul sect3_li";
+    margin-bottom: 1em;
 }
+
+/* Grid section 3 About page*/
+
+.gridSection3 h3 {
+    grid-area: sect3_h3;
+    text-align: center;
+    font-size: 25px;
+}
+
+.gridSection3 ul {
+    grid-area: sect3_ul;
+    line-height: 25px;
+}
+
+.gridSection3 li {
+    grid-area: sect3_li;
+}
+
+/* Grid section 4 */
 
 .gridSection4 {
     grid-area: sect4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "";
+    margin-bottom: 1em;
 }
+
+/* Grid section 5 */
 
 .gridSection5 {
     grid-area: sect5;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "";
+    margin-bottom: 1em;
 }
+
+/* Grid section 6 */
 
 .gridSection6 {
     grid-area: sect6;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "";
+    margin-bottom: 1em;
 }
 
 /* Footer */
