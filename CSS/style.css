@@ -262,6 +262,23 @@ a {
     padding-top: 50px;
 }
 /* Grid section 4 Skills Page*/
+
+.gridSection4 #otherSkillsIcon i{
+    grid-area: 4A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection4 #otherSkillsInfo h2 {
+    text-align: center;
+}
+
+.gridSection4 #otherSkillsInfo ul li h3{
+    grid-area: 4B;
+    text-align: justify;
+    padding: 10px;
+}
+
 /* Grid section 4 Portfolio page*/
 
 /* Grid section 5 */
