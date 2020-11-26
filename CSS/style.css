@@ -96,6 +96,24 @@ a {
     padding-top: 50px;
 }
 
+/* Grid section 1 Skills page*/
+
+.gridSection1 #FrontEndTechImg img {
+    grid-area: 1A;
+    width: 100%;
+    height: 100%;
+}
+
+.gridSection1 #FrontEndTechInfo {
+    grid-area: 1B;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection1 #FrontEndTechInfo h2 {
+    text-align: center;
+}
+/* Grid section 1 Portfolio page*/
 
 /* Grid section 2 General*/
 
@@ -138,6 +156,22 @@ a {
     padding-top: 50px;
 }
 /* Grid section 2 Skills page*/
+
+.gridSection2 #BackEndTechImg img{
+    grid-area: 2A;
+    width: 100%;
+    height: 100%;
+}
+
+.gridSection2 #BackEndTechInfo h2 {
+    text-align: center;
+}
+
+.gridSection2 #BackEndTechInfo ul li h3{
+    grid-area: 2B;
+    text-align: justify;
+    padding: 10px;
+}
 /* Grid section 2 Portfolio page*/
 
 /* Grid section 3 General*/
@@ -224,7 +258,7 @@ a {
     grid-area: sect5;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "";
+    grid-template-areas: "5A 5B";
     margin-bottom: 1em;
 }
 
@@ -234,7 +268,7 @@ a {
     grid-area: sect6;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "";
+    grid-template-areas: "6A 6B";
     margin-bottom: 1em;
 }
 
