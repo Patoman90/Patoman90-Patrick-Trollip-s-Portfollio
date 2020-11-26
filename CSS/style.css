@@ -59,14 +59,14 @@ a {
     grid-area: sect1;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "A B";
+    grid-template-areas: "1A 1B";
     margin-bottom: 1em;
 }
 
 /* Grid section 1 About page*/
 
 .gridSection1 img {
-    grid-area: A;
+    grid-area: 1A;
     width: 100%;
     border-radius: 5px;
     border-color: gray;
@@ -75,7 +75,7 @@ a {
 }
 
 .gridSection1 aside {
-    grid-area: B;
+    grid-area: 1B;
     padding-top: 50px;
     text-align: center;
     font-size: 25px;
@@ -84,13 +84,16 @@ a {
 /* Grid section 1 Contact page*/
 
 .gridSection1 #phone {
-    grid-area: A;
-    width: 100%;
+    grid-area: 1A;
+    margin: 100px;
+    font-size: 50px;
 }
 
 .gridSection1 #phoneMe {
-    grid-area: B;
-    padding: 10px;
+    grid-area: 1B;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
 }
 
 
@@ -100,7 +103,7 @@ a {
     grid-area: sect2;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "sect2_h3 sect2_para";
+    grid-template-areas: "2A 2B";
     margin-bottom: 1em;
 }
 
@@ -108,17 +111,34 @@ a {
 
 .gridSection2 h3 {
     padding-top: 10px;
-    grid-area: sect2_h3;
+    grid-area: 2A;
     text-align: center;
     font-size: 25px;
 }
 
 .gridSection2 p {
-    grid-area: sect2_para;
+    grid-area: 2B;
     text-align: justify;
     line-height: 25px;
     padding-right: 10px;
 }
+
+/* Grid section 2 Contact page*/
+
+.gridSection2 #email {
+    grid-area: 2A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection2 #emailMe {
+    grid-area: 2B;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
+/* Grid section 2 Skills page*/
+/* Grid section 2 Portfolio page*/
 
 /* Grid section 3 General*/
 
@@ -126,36 +146,77 @@ a {
     grid-area: sect3;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas: "sect3_h3 sect3_ul sect3_li";
+    grid-template-areas: "3A 3B 3C";
     margin-bottom: 1em;
 }
 
 /* Grid section 3 About page*/
 
 .gridSection3 h3 {
-    grid-area: sect3_h3;
+    grid-area: 3A;
     text-align: center;
     font-size: 25px;
 }
 
 .gridSection3 ul {
-    grid-area: sect3_ul;
+    grid-area: 3B;
     line-height: 25px;
 }
 
 .gridSection3 li {
-    grid-area: sect3_li;
+    grid-area: 3C;
 }
 
-/* Grid section 4 */
+/* Grid section 3 Contact page*/
+
+.gridSection3 #socialMe {
+    grid-area: 3A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection3 #findMe {
+    grid-area: 3B, 3C;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
+/* Grid section 3 Skills page*/
+
+.gridSection3 {
+
+}
+/* Grid section 3 Portfolio page*/
+
+.gridSection3 {
+
+}
+/* Grid section 4 General*/
 
 .gridSection4 {
     grid-area: sect4;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "";
+    grid-template-areas: "4A 4B";
     margin-bottom: 1em;
 }
+
+/* Grid section 4 Contact Page*/
+
+.gridSection4 #github {
+    grid-area: 4A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection4 #myGithub {
+    grid-area: 4B;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
+/* Grid section 4 Skills Page*/
+/* Grid section 4 Portfolio page*/
 
 /* Grid section 5 */
 
