@@ -217,8 +217,20 @@ a {
 }
 /* Grid section 3 Skills page*/
 
-.gridSection3 {
+.gridSection3 #FrameworkImg img{
+    grid-area: 3A;
+    width: 100%;
+    height: 100%;
+}
 
+.gridSection3 #FrameworkInfo h2 {
+    text-align: center;
+}
+
+.gridSection3 #FrameworkInfo ul li h3{
+    grid-area: 3B;
+    text-align: justify;
+    padding: 10px;
 }
 /* Grid section 3 Portfolio page*/
 
