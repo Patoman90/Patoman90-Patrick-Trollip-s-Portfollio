@@ -29,8 +29,9 @@ button {
 /* Links */
 
 a {
-    color: oldlace;
+    color: orangered;
     text-decoration: none;
+    padding-bottom: 5px;
 }
 
 /* Grid general styling */
@@ -113,7 +114,24 @@ a {
 .gridSection1 #FrontEndTechInfo h2 {
     text-align: center;
 }
+
 /* Grid section 1 Portfolio page*/
+
+.gridSection1 #projectIconSect1 {
+    grid-area: 1A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection1 #projectA {
+    grid-area: 1B;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection1 #projectA h2 {
+    text-align: center;
+}
 
 /* Grid section 2 General*/
 
@@ -155,6 +173,7 @@ a {
     font-size: 25px;
     padding-top: 50px;
 }
+
 /* Grid section 2 Skills page*/
 
 .gridSection2 #BackEndTechImg img{
@@ -172,7 +191,24 @@ a {
     text-align: justify;
     padding: 10px;
 }
+
 /* Grid section 2 Portfolio page*/
+
+.gridSection2 #projectIconSect2 {
+    grid-area: 2A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection2 #projectB {
+    grid-area: 2B;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection2 #projectB h2 {
+    text-align: center;
+}
 
 /* Grid section 3 General*/
 
@@ -234,9 +270,23 @@ a {
 }
 /* Grid section 3 Portfolio page*/
 
-.gridSection3 {
-
+.gridSection3 #projectIconSect3 {
+    grid-area: 3A;
+    margin: 100px;
+    font-size: 50px;
 }
+
+.gridSection3 #projectC {
+    grid-area: 3B, 3C;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection3 #projectC h2 {
+    grid-area: 3B 3C;
+    text-align: center;
+}
+
 /* Grid section 4 General*/
 
 .gridSection4 {
@@ -281,6 +331,22 @@ a {
 
 /* Grid section 4 Portfolio page*/
 
+.gridSection4 #projectIconSect4 {
+    grid-area: 4A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection4 #projectD {
+    grid-area: 4B;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection4 #projectD h2 {
+    text-align: center;
+}
+
 /* Grid section 5 */
 
 .gridSection5 {
@@ -291,6 +357,24 @@ a {
     margin-bottom: 1em;
 }
 
+/* Grid section 5 Portfolio page */
+
+.gridSection5 #projectIconSect5 {
+    grid-area: 5A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection5 #projectE {
+    grid-area: 5B;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection5 #projectE h2 {
+    text-align: center;
+}
+
 /* Grid section 6 */
 
 .gridSection6 {
@@ -299,6 +383,24 @@ a {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "6A 6B";
     margin-bottom: 1em;
+}
+
+/* Grid section 6 Portfolio page */
+
+.gridSection6 #projectIconSect6 {
+    grid-area: 6A;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.gridSection6 #projectF {
+    grid-area: 6B;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gridSection6 #projectF h2 {
+    text-align: center;
 }
 
 /* Footer */
