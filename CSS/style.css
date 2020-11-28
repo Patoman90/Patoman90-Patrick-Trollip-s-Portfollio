@@ -34,6 +34,13 @@ a {
     padding-bottom: 5px;
 }
 
+
+/* Body */
+
+body{
+    background-color: midnightblue;
+}
+
 /* Grid general styling */
 
 
@@ -141,6 +148,7 @@ a {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "2A 2B";
     margin-bottom: 1em;
+    background-color: gray;
 }
 
 /* Grid section 2 About page*/
@@ -295,6 +303,7 @@ a {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "4A 4B";
     margin-bottom: 1em;
+    background-color: gray;
 }
 
 /* Grid section 4 Contact Page*/
@@ -383,6 +392,7 @@ a {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "6A 6B";
     margin-bottom: 1em;
+    background-color: gray;
 }
 
 /* Grid section 6 Portfolio page */
