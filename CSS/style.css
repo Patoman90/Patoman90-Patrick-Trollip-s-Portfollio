@@ -1,31 +1,4 @@
 
-/* Header section */
-
-header > h1{
-    background-color: midnightblue;
-    color:oldlace;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-header > nav{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-}
-
-/* Nav buttons */
-
-button {
-    text-decoration: none;
-    width: 100%;
-    height: 100px;
-    background-color: gray;
-    color:oldlace;
-    font-size: 25px;
-}
-
 /* Links */
 
 a {
@@ -41,385 +14,842 @@ body{
     background-color: midnightblue;
 }
 
-/* Grid general styling */
 
+/*  Mobile devices */
+@media screen and (min-width: 200px) {
+    .gridContainer {
+        min-width: fit-content;
+        max-width: max-content;
+        display: grid;
+        overflow: auto;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+            "sect1"
+            "sect2"
+            "sect3"
+            "sect4"
+            "sect5"
+            "sect6"
+        ;
+        background-color:midnightblue;
+        color: oldlace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-.gridContainer {
+    /* Header section */
+
+    header > h1{
+        width: 100%;
+        background-color: midnightblue;
+        color:oldlace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    header > nav{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
-        "sect1 sect1 sect1 sect1"
-        "sect2 sect2 sect2 sect2"
-        "sect3 sect3 sect3 sect3"
-        "sect4 sect4 sect4 sect4"
-        "sect5 sect5 sect5 sect5"
-        "sect6 sect6 sect6 sect6"
-    ;
-    background-color: midnightblue;
-    color: oldlace;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* Grid section 1 General*/
-
-.gridSection1 {
-    grid-area: sect1;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "1A 1B";
-    margin-bottom: 1em;
-}
-
-/* Grid section 1 About page*/
-
-.gridSection1 img {
-    grid-area: 1A;
     width: 100%;
-    border-radius: 5px;
-    border-color: gray;
-    border-width: 10px;
-    border: solid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    }
+
+    /* Nav buttons */
+
+    button {
+        text-decoration: none;
+        width: 100%;
+        height: 100px;
+        background-color: gray;
+        color:oldlace;
+        font-size: 25px;
+    }
+
+
+    /* Grid section 1 General*/
+
+    .gridSection1 {
+        grid-area: sect1;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "1A 1B";
+        margin: 5px;
+    }
+
+    /* Grid section 1 About page*/
+
+    .gridSection1 img {
+        grid-area: 1A;
+        width: 100%;
+        border-radius: 5px;
+        border-color: gray;
+        border-width: 10px;
+        border: solid;
+    }
+
+    .gridSection1 aside {
+        grid-area: 1B;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* Grid section 1 Contact page*/
+
+    .gridSection1 #phone {
+        grid-area: 1A;
+        margin: 100px;
+        font-size: 100px;
+        padding: 25px;
+    }
+
+    .gridSection1 #phoneMe {
+        grid-area: 1B;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* Grid section 1 Skills page*/
+
+    .gridSection1 #FrontEndTechImg img {
+        grid-area: 1A;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gridSection1 #FrontEndTechInfo {
+        grid-area: 1B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection1 #FrontEndTechInfo h2 {
+        text-align: center;
+    }
+
+    /* Grid section 1 Portfolio page*/
+
+    .gridSection1 #projectIconSect1 {
+        grid-area: 1A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection1 #projectA {
+        grid-area: 1B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection1 #projectA h2 {
+        text-align: center;
+    }
+
+    /* Grid section 2 General*/
+
+    .gridSection2 {
+        grid-area: sect2;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "2A 2B";
+        margin: 5px;
+        background-color: gray;
+    }
+
+    /* Grid section 2 About page*/
+
+    .gridSection2 h3 {
+        padding-top: 10px;
+        grid-area: 2A;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .gridSection2 p {
+        grid-area: 2B;
+        text-align: justify;
+        line-height: 25px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    /* Grid section 2 Contact page*/
+
+    .gridSection2 #email {
+        grid-area: 2A;
+        margin: 100px;
+        font-size: 100px;
+        padding: 25px;
+        width: 100%;
+    }
+
+    .gridSection2 #emailMe p {
+        grid-area: 2B;
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* Grid section 2 Skills page*/
+
+    .gridSection2 #BackEndTechImg img{
+        grid-area: 2A;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gridSection2 #BackEndTechInfo h2 {
+        text-align: center;
+    }
+
+    .gridSection2 #BackEndTechInfo ul li h3{
+        grid-area: 2B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    /* Grid section 2 Portfolio page*/
+
+    .gridSection2 #projectIconSect2 {
+        grid-area: 2A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection2 #projectB {
+        grid-area: 2B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection2 #projectB h2 {
+        text-align: center;
+    }
+
+    /* Grid section 3 General*/
+
+    .gridSection3 {
+        grid-area: sect3;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "3A 3B 3C";
+        margin: 5px;
+    }
+
+    /* Grid section 3 About page*/
+
+    .gridSection3 h3 {
+        grid-area: 3A;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .gridSection3 ul {
+        grid-area: 3B;
+        line-height: 25px;
+    }
+
+    .gridSection3 li {
+        grid-area: 3C;
+    }
+
+    /* Grid section 3 Contact page*/
+
+    .gridSection3 #socialMe {
+        grid-area: 3A;
+        margin: 100px;
+        font-size: 100px;
+        padding: 25px;
+        width: 100%;
+    }
+
+    .gridSection3 #findMe {
+        grid-area: 3B, 3C;
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    /* Grid section 3 Skills page*/
+
+    .gridSection3 #FrameworkImg img{
+        grid-area: 3A;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gridSection3 #FrameworkInfo h2 {
+        text-align: center;
+    }
+
+    .gridSection3 #FrameworkInfo ul li h3{
+        grid-area: 3B;
+        text-align: justify;
+        padding: 10px;
+    }
+    /* Grid section 3 Portfolio page*/
+
+    .gridSection3 #projectIconSect3 {
+        grid-area: 3A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection3 #projectC {
+        grid-area: 3B, 3C;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection3 #projectC h2 {
+        grid-area: 3B 3C;
+        text-align: center;
+    }
+
+    /* Grid section 4 General*/
+
+    .gridSection4 {
+        grid-area: sect4;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "4A 4B";
+        margin: 5px;
+        background-color: gray;
+    }
+
+    /* Grid section 4 Contact Page*/
+
+    .gridSection4 #github {
+        grid-area: 4A;
+        margin: 100px;
+        font-size: 100px;
+        padding: 25px;
+        width: 100%;
+    }
+
+    .gridSection4 #myGithub {
+        grid-area: 4B;
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
+    /* Grid section 4 Skills Page*/
+
+    .gridSection4 #otherSkillsIcon i{
+        grid-area: 4A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection4 #otherSkillsInfo h2 {
+        text-align: center;
+    }
+
+    .gridSection4 #otherSkillsInfo ul li h3{
+        grid-area: 4B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    /* Grid section 4 Portfolio page*/
+
+    .gridSection4 #projectIconSect4 {
+        grid-area: 4A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection4 #projectD {
+        grid-area: 4B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection4 #projectD h2 {
+        text-align: center;
+    }
+
+    /* Grid section 5 */
+
+    .gridSection5 {
+        grid-area: sect5;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "5A 5B";
+        margin: 5px;
+    }
+
+    /* Grid section 5 Portfolio page */
+
+    .gridSection5 #projectIconSect5 {
+        grid-area: 5A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection5 #projectE {
+        grid-area: 5B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection5 #projectE h2 {
+        text-align: center;
+    }
+
+    /* Grid section 6 */
+
+    .gridSection6 {
+        grid-area: sect6;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "6A 6B";
+        margin: 5px;
+        background-color: gray;
+    }
+
+    /* Grid section 6 Portfolio page */
+
+    .gridSection6 #projectIconSect6 {
+        grid-area: 6A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection6 #projectF {
+        grid-area: 6B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection6 #projectF h2 {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer { 
+        background-color: midnightblue;
+        color:oldlace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
-.gridSection1 aside {
-    grid-area: 1B;
-    padding-top: 50px;
-    text-align: center;
-    font-size: 25px;
-}
 
-/* Grid section 1 Contact page*/
 
-.gridSection1 #phone {
-    grid-area: 1A;
-    margin: 100px;
-    font-size: 50px;
-}
 
-.gridSection1 #phoneMe {
-    grid-area: 1B;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
-}
+/* Grid Desktop and tablet styling */
 
-/* Grid section 1 Skills page*/
 
-.gridSection1 #FrontEndTechImg img {
-    grid-area: 1A;
-    width: 100%;
-    height: 100%;
-}
+@media screen and (min-width: 450px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+            "sect1 sect1 sect1 sect1"
+            "sect2 sect2 sect2 sect2"
+            "sect3 sect3 sect3 sect3"
+            "sect4 sect4 sect4 sect4"
+            "sect5 sect5 sect5 sect5"
+            "sect6 sect6 sect6 sect6"
+        ;
+        background-color: midnightblue;
+        color: oldlace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-.gridSection1 #FrontEndTechInfo {
-    grid-area: 1B;
-    text-align: justify;
-    padding: 10px;
-}
+    /* Header section */
 
-.gridSection1 #FrontEndTechInfo h2 {
-    text-align: center;
-}
+    header > h1{
+        background-color: midnightblue;
+        color:oldlace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
-/* Grid section 1 Portfolio page*/
-
-.gridSection1 #projectIconSect1 {
-    grid-area: 1A;
-    margin: 100px;
-    font-size: 50px;
-}
-
-.gridSection1 #projectA {
-    grid-area: 1B;
-    text-align: justify;
-    padding: 10px;
-}
-
-.gridSection1 #projectA h2 {
-    text-align: center;
-}
-
-/* Grid section 2 General*/
-
-.gridSection2 {
-    grid-area: sect2;
+    header > nav{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "2A 2B";
-    margin-bottom: 1em;
-    background-color: gray;
-}
+    grid-template-columns: repeat(4, 1fr);
+    }
 
-/* Grid section 2 About page*/
+    /* Nav buttons */
 
-.gridSection2 h3 {
-    padding-top: 10px;
-    grid-area: 2A;
-    text-align: center;
-    font-size: 25px;
-}
+    button {
+        text-decoration: none;
+        width: 100%;
+        height: 100px;
+        background-color: gray;
+        color:oldlace;
+        font-size: 25px;
+    }
 
-.gridSection2 p {
-    grid-area: 2B;
-    text-align: justify;
-    line-height: 25px;
-    padding-right: 10px;
-}
+    /* Grid section 1 General*/
 
-/* Grid section 2 Contact page*/
+    .gridSection1 {
+        grid-area: sect1;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "1A 1B";
+        margin-bottom: 1em;
+    }
 
-.gridSection2 #email {
-    grid-area: 2A;
-    margin: 100px;
-    font-size: 50px;
-}
+    /* Grid section 1 About page*/
 
-.gridSection2 #emailMe {
-    grid-area: 2B;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
-}
+    .gridSection1 img {
+        grid-area: 1A;
+        width: 100%;
+        border-radius: 5px;
+        border-color: gray;
+        border-width: 10px;
+        border: solid;
+    }
 
-/* Grid section 2 Skills page*/
+    .gridSection1 aside {
+        grid-area: 1B;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 25px;
+    }
 
-.gridSection2 #BackEndTechImg img{
-    grid-area: 2A;
-    width: 100%;
-    height: 100%;
-}
+    /* Grid section 1 Contact page*/
 
-.gridSection2 #BackEndTechInfo h2 {
-    text-align: center;
-}
+    .gridSection1 #phone {
+        grid-area: 1A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-.gridSection2 #BackEndTechInfo ul li h3{
-    grid-area: 2B;
-    text-align: justify;
-    padding: 10px;
-}
+    .gridSection1 #phoneMe {
+        grid-area: 1B;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+    }
 
-/* Grid section 2 Portfolio page*/
+    /* Grid section 1 Skills page*/
 
-.gridSection2 #projectIconSect2 {
-    grid-area: 2A;
-    margin: 100px;
-    font-size: 50px;
-}
+    .gridSection1 #FrontEndTechImg img {
+        grid-area: 1A;
+        width: 100%;
+        height: 100%;
+    }
 
-.gridSection2 #projectB {
-    grid-area: 2B;
-    text-align: justify;
-    padding: 10px;
-}
+    .gridSection1 #FrontEndTechInfo {
+        grid-area: 1B;
+        text-align: justify;
+        padding: 10px;
+    }
 
-.gridSection2 #projectB h2 {
-    text-align: center;
-}
+    .gridSection1 #FrontEndTechInfo h2 {
+        text-align: center;
+    }
 
-/* Grid section 3 General*/
+    /* Grid section 1 Portfolio page*/
 
-.gridSection3 {
-    grid-area: sect3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas: "3A 3B 3C";
-    margin-bottom: 1em;
-}
+    .gridSection1 #projectIconSect1 {
+        grid-area: 1A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-/* Grid section 3 About page*/
+    .gridSection1 #projectA {
+        grid-area: 1B;
+        text-align: justify;
+        padding: 10px;
+    }
 
-.gridSection3 h3 {
-    grid-area: 3A;
-    text-align: center;
-    font-size: 25px;
-}
+    .gridSection1 #projectA h2 {
+        text-align: center;
+    }
 
-.gridSection3 ul {
-    grid-area: 3B;
-    line-height: 25px;
-}
+    /* Grid section 2 General*/
 
-.gridSection3 li {
-    grid-area: 3C;
-}
+    .gridSection2 {
+        grid-area: sect2;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "2A 2B";
+        margin-bottom: 1em;
+        background-color: gray;
+    }
 
-/* Grid section 3 Contact page*/
+    /* Grid section 2 About page*/
 
-.gridSection3 #socialMe {
-    grid-area: 3A;
-    margin: 100px;
-    font-size: 50px;
-}
+    .gridSection2 h3 {
+        padding-top: 10px;
+        grid-area: 2A;
+        text-align: center;
+        font-size: 25px;
+    }
 
-.gridSection3 #findMe {
-    grid-area: 3B, 3C;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
-}
-/* Grid section 3 Skills page*/
+    .gridSection2 p {
+        grid-area: 2B;
+        text-align: justify;
+        line-height: 25px;
+        padding-right: 10px;
+    }
 
-.gridSection3 #FrameworkImg img{
-    grid-area: 3A;
-    width: 100%;
-    height: 100%;
-}
+    /* Grid section 2 Contact page*/
 
-.gridSection3 #FrameworkInfo h2 {
-    text-align: center;
-}
+    .gridSection2 #email {
+        grid-area: 2A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-.gridSection3 #FrameworkInfo ul li h3{
-    grid-area: 3B;
-    text-align: justify;
-    padding: 10px;
-}
-/* Grid section 3 Portfolio page*/
+    .gridSection2 #emailMe {
+        grid-area: 2B;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+    }
 
-.gridSection3 #projectIconSect3 {
-    grid-area: 3A;
-    margin: 100px;
-    font-size: 50px;
-}
+    /* Grid section 2 Skills page*/
 
-.gridSection3 #projectC {
-    grid-area: 3B, 3C;
-    text-align: justify;
-    padding: 10px;
-}
+    .gridSection2 #BackEndTechImg img{
+        grid-area: 2A;
+        width: 100%;
+        height: 100%;
+    }
 
-.gridSection3 #projectC h2 {
-    grid-area: 3B 3C;
-    text-align: center;
-}
+    .gridSection2 #BackEndTechInfo h2 {
+        text-align: center;
+    }
 
-/* Grid section 4 General*/
+    .gridSection2 #BackEndTechInfo ul li h3{
+        grid-area: 2B;
+        text-align: justify;
+        padding: 10px;
+    }
 
-.gridSection4 {
-    grid-area: sect4;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "4A 4B";
-    margin-bottom: 1em;
-    background-color: gray;
-}
+    /* Grid section 2 Portfolio page*/
 
-/* Grid section 4 Contact Page*/
+    .gridSection2 #projectIconSect2 {
+        grid-area: 2A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-.gridSection4 #github {
-    grid-area: 4A;
-    margin: 100px;
-    font-size: 50px;
-}
+    .gridSection2 #projectB {
+        grid-area: 2B;
+        text-align: justify;
+        padding: 10px;
+    }
 
-.gridSection4 #myGithub {
-    grid-area: 4B;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
-}
-/* Grid section 4 Skills Page*/
+    .gridSection2 #projectB h2 {
+        text-align: center;
+    }
 
-.gridSection4 #otherSkillsIcon i{
-    grid-area: 4A;
-    margin: 100px;
-    font-size: 50px;
-}
+    /* Grid section 3 General*/
 
-.gridSection4 #otherSkillsInfo h2 {
-    text-align: center;
-}
+    .gridSection3 {
+        grid-area: sect3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: "3A 3B 3C";
+        margin-bottom: 1em;
+    }
 
-.gridSection4 #otherSkillsInfo ul li h3{
-    grid-area: 4B;
-    text-align: justify;
-    padding: 10px;
-}
+    /* Grid section 3 About page*/
 
-/* Grid section 4 Portfolio page*/
+    .gridSection3 h3 {
+        grid-area: 3A;
+        text-align: center;
+        font-size: 25px;
+    }
 
-.gridSection4 #projectIconSect4 {
-    grid-area: 4A;
-    margin: 100px;
-    font-size: 50px;
-}
+    .gridSection3 ul {
+        grid-area: 3B;
+        line-height: 25px;
+    }
 
-.gridSection4 #projectD {
-    grid-area: 4B;
-    text-align: justify;
-    padding: 10px;
-}
+    .gridSection3 li {
+        grid-area: 3C;
+    }
 
-.gridSection4 #projectD h2 {
-    text-align: center;
-}
+    /* Grid section 3 Contact page*/
 
-/* Grid section 5 */
+    .gridSection3 #socialMe {
+        grid-area: 3A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-.gridSection5 {
-    grid-area: sect5;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "5A 5B";
-    margin-bottom: 1em;
-}
+    .gridSection3 #findMe {
+        grid-area: 3B, 3C;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    /* Grid section 3 Skills page*/
 
-/* Grid section 5 Portfolio page */
+    .gridSection3 #FrameworkImg img{
+        grid-area: 3A;
+        width: 100%;
+        height: 100%;
+    }
 
-.gridSection5 #projectIconSect5 {
-    grid-area: 5A;
-    margin: 100px;
-    font-size: 50px;
-}
+    .gridSection3 #FrameworkInfo h2 {
+        text-align: center;
+    }
 
-.gridSection5 #projectE {
-    grid-area: 5B;
-    text-align: justify;
-    padding: 10px;
-}
+    .gridSection3 #FrameworkInfo ul li h3{
+        grid-area: 3B;
+        text-align: justify;
+        padding: 10px;
+    }
+    /* Grid section 3 Portfolio page*/
 
-.gridSection5 #projectE h2 {
-    text-align: center;
-}
+    .gridSection3 #projectIconSect3 {
+        grid-area: 3A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-/* Grid section 6 */
+    .gridSection3 #projectC {
+        grid-area: 3B, 3C;
+        text-align: justify;
+        padding: 10px;
+    }
 
-.gridSection6 {
-    grid-area: sect6;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "6A 6B";
-    margin-bottom: 1em;
-    background-color: gray;
-}
+    .gridSection3 #projectC h2 {
+        grid-area: 3B 3C;
+        text-align: center;
+    }
 
-/* Grid section 6 Portfolio page */
+    /* Grid section 4 General*/
 
-.gridSection6 #projectIconSect6 {
-    grid-area: 6A;
-    margin: 100px;
-    font-size: 50px;
-}
+    .gridSection4 {
+        grid-area: sect4;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "4A 4B";
+        margin-bottom: 1em;
+        background-color: gray;
+    }
 
-.gridSection6 #projectF {
-    grid-area: 6B;
-    text-align: justify;
-    padding: 10px;
-}
+    /* Grid section 4 Contact Page*/
 
-.gridSection6 #projectF h2 {
-    text-align: center;
-}
+    .gridSection4 #github {
+        grid-area: 4A;
+        margin: 100px;
+        font-size: 50px;
+    }
 
-/* Footer */
+    .gridSection4 #myGithub {
+        grid-area: 4B;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+    /* Grid section 4 Skills Page*/
 
-footer { 
-    background-color: midnightblue;
-    color:oldlace;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    .gridSection4 #otherSkillsIcon i{
+        grid-area: 4A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection4 #otherSkillsInfo h2 {
+        text-align: center;
+    }
+
+    .gridSection4 #otherSkillsInfo ul li h3{
+        grid-area: 4B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    /* Grid section 4 Portfolio page*/
+
+    .gridSection4 #projectIconSect4 {
+        grid-area: 4A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection4 #projectD {
+        grid-area: 4B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection4 #projectD h2 {
+        text-align: center;
+    }
+
+    /* Grid section 5 */
+
+    .gridSection5 {
+        grid-area: sect5;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "5A 5B";
+        margin-bottom: 1em;
+    }
+
+    /* Grid section 5 Portfolio page */
+
+    .gridSection5 #projectIconSect5 {
+        grid-area: 5A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection5 #projectE {
+        grid-area: 5B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection5 #projectE h2 {
+        text-align: center;
+    }
+
+    /* Grid section 6 */
+
+    .gridSection6 {
+        grid-area: sect6;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "6A 6B";
+        margin-bottom: 1em;
+        background-color: gray;
+    }
+
+    /* Grid section 6 Portfolio page */
+
+    .gridSection6 #projectIconSect6 {
+        grid-area: 6A;
+        margin: 100px;
+        font-size: 50px;
+    }
+
+    .gridSection6 #projectF {
+        grid-area: 6B;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .gridSection6 #projectF h2 {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer { 
+        background-color: midnightblue;
+        color:oldlace;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
