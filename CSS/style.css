@@ -138,17 +138,19 @@ body{
         margin: 100px;
         font-size: 100px;
         padding: 25px;
-        width: 100%;
     }
 
     .gridSection1 #projectA {
         grid-area: 1B;
-        text-align: justify;
-        padding: 10px;
+        text-align: left;
+        padding: 20px;
+        margin-right: 15px;
     }
 
     .gridSection1 #projectA h2 {
         text-align: center;
+        padding: 10px;
+        margin-left: 20px;
     }
 
     /* Grid section 2 General*/
@@ -222,17 +224,21 @@ body{
     .gridSection2 #projectIconSect2 {
         grid-area: 2A;
         margin: 100px;
-        font-size: 50px;
+        font-size: 100px;
+        padding: 25px;
     }
 
     .gridSection2 #projectB {
         grid-area: 2B;
-        text-align: justify;
-        padding: 10px;
+        text-align: left;
+        padding: 20px;
+        margin-right: 15px;
     }
 
     .gridSection2 #projectB h2 {
         text-align: center;
+        padding: 10px;
+        margin-left: 20px;
     }
 
     /* Grid section 3 General*/
@@ -303,18 +309,22 @@ body{
     .gridSection3 #projectIconSect3 {
         grid-area: 3A;
         margin: 100px;
-        font-size: 50px;
+        font-size: 100px;
+        padding: 25px;
     }
 
     .gridSection3 #projectC {
         grid-area: 3B, 3C;
-        text-align: justify;
-        padding: 10px;
+        text-align: left;
+        padding: 20px;
+        margin-right: 15px;
     }
 
     .gridSection3 #projectC h2 {
         grid-area: 3B 3C;
         text-align: center;
+        padding: 10px;
+        margin-left: 20px;
     }
 
     /* Grid section 4 General*/
@@ -372,17 +382,21 @@ body{
     .gridSection4 #projectIconSect4 {
         grid-area: 4A;
         margin: 100px;
-        font-size: 50px;
+        font-size: 100px;
+        padding: 25px;
     }
 
     .gridSection4 #projectD {
         grid-area: 4B;
-        text-align: justify;
-        padding: 10px;
+        text-align: left;
+        padding: 20px;
+        margin-right: 15px;
     }
 
     .gridSection4 #projectD h2 {
         text-align: center;
+        padding: 10px;
+        margin-left: 20px;
     }
 
     /* Grid section 5 */
@@ -400,17 +414,21 @@ body{
     .gridSection5 #projectIconSect5 {
         grid-area: 5A;
         margin: 100px;
-        font-size: 50px;
+        font-size: 100px;
+        padding: 25px;
     }
 
     .gridSection5 #projectE {
         grid-area: 5B;
-        text-align: justify;
-        padding: 10px;
+        text-align: left;
+        padding: 20px;
+        margin-right: 15px;
     }
 
     .gridSection5 #projectE h2 {
         text-align: center;
+        padding: 10px;
+        margin-left: 20px;
     }
 
     /* Grid section 6 */
@@ -429,17 +447,21 @@ body{
     .gridSection6 #projectIconSect6 {
         grid-area: 6A;
         margin: 100px;
-        font-size: 50px;
+        font-size: 100px;
+        padding: 25px;
     }
 
     .gridSection6 #projectF {
         grid-area: 6B;
-        text-align: justify;
-        padding: 10px;
+        text-align: left;
+        padding: 20px;
+        margin-right: 15px;
     }
 
     .gridSection6 #projectF h2 {
         text-align: center;
+        padding: 10px;
+        margin-left: 20px;
     }
 
     /* Footer */
