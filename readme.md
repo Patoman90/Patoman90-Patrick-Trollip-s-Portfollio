@@ -64,16 +64,15 @@ I wanted to use what I learnt about the grid for my layout instead of using a fr
 - #### Wireframes
 
 - Mobile views:
-- Assets\wireFrames\indexMobileView.png
-- Assets\wireFrames\contactMobileView.png
-- Assets\wireFrames\skillsMobileView.png
-- Assets\wireFrames\portfolioMobileView.png
+![Alt text](Assets\wireFrames\indexMobileView.png?raw=true "Title")
+![Alt text](Assets\wireFrames\contactMobileView.png?raw=true "Title")
+![Alt text](Assets\wireFrames\skillsMobileView.png?raw=true "Title")
+![Alt text](Assets\wireFrames\portfolioMobileView.png?raw=true "Title")
 - Desktop & Tablet views:
-- Assets\wireFrames\indexPageDesktop&Tablet.png
-- Assets\wireFrames\contactPageDesktop&Tablet.png
-- Assets\wireFrames\skillsPageDesktop&Tablet.png
-- Assets\wireFrames\portfolioPageDesktop&Tablet.png
-
+![Alt text](Assets\wireFrames\indexPageDesktop&Tablet.png?raw=true "Title")
+![Alt text](Assets\wireFrames\contactPageDesktop&Tablet.png?raw=true "Title")
+![Alt text](Assets\wireFrames\skillsPageDesktop&Tablet.png?raw=true "Title")
+![Alt text](Assets\wireFrames\portfolioPageDesktop&Tablet.png?raw=true "Title")
 
 ### Developer and Business Purpose
 
