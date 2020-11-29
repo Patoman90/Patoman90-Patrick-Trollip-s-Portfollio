@@ -64,15 +64,15 @@ I wanted to use what I learnt about the grid for my layout instead of using a fr
 - #### Wireframes
 
 - Mobile views:
-![Wireframe for Index page mobile drawn with paper and pencil.](indexMobileView.png)
-![Wireframe for Contact page mobile drawn with paper and pencil.](Assets\wireFrames\contactMobileView.png?raw=true "Contact page for mobile")
-![Wireframe for Skills page mobile drawn with paper and pencil.](Assets\wireFrames\skillsMobileView.png?raw=true "Skills page for mobile")
-![Wireframe for Portfolio page mobile drawn with paper and pencil.](Assets\wireFrames\portfolioMobileView.png?raw=true "Portfolio page for mobile")
+![Wireframe for Index page mobile drawn with paper and pencil.](indexMobileView.png?raw=true "Index page for mobile")
+![Wireframe for Contact page mobile drawn with paper and pencil.](contactMobileView.png?raw=true "Contact page for mobile")
+![Wireframe for Skills page mobile drawn with paper and pencil.](skillsMobileView.png?raw=true "Skills page for mobile")
+![Wireframe for Portfolio page mobile drawn with paper and pencil.](portfolioMobileView.png?raw=true "Portfolio page for mobile")
 - Desktop & Tablet views:
-![Wireframe for Index page desktop/tablet drawn with paper and pencil.](Assets\wireFrames\indexPageDesktop&Tablet.png?raw=true "Index page for desktop and tablet")
-![Wireframe for Contact page desktop/tablet drawn with paper and pencil.](Assets\wireFrames\contactPageDesktop&Tablet.png?raw=true "Contact page for desktop and tablet")
-![Wireframe for Skilss page desktop/tablet drawn with paper and pencil.](Assets\wireFrames\skillsPageDesktop&Tablet.png?raw=true "Skills page for desktop and tablet")
-![Wireframe for Portfolio page desktop/tablet drawn with paper and pencil.](Assets\wireFrames\portfolioPageDesktop&Tablet.png?raw=true "Portfolio page for desktop and tablet")
+![Wireframe for Index page desktop/tablet drawn with paper and pencil.](indexPageDesktop&Tablet.png?raw=true "Index page for desktop and tablet")
+![Wireframe for Contact page desktop/tablet drawn with paper and pencil.](contactPageDesktop&Tablet.png?raw=true "Contact page for desktop and tablet")
+![Wireframe for Skilss page desktop/tablet drawn with paper and pencil.](skillsPageDesktop&Tablet.png?raw=true "Skills page for desktop and tablet")
+![Wireframe for Portfolio page desktop/tablet drawn with paper and pencil.](portfolioPageDesktop&Tablet.png?raw=true "Portfolio page for desktop and tablet")
 
 ### Developer and Business Purpose
 
