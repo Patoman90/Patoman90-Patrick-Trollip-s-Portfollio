@@ -64,7 +64,7 @@ I wanted to use what I learnt about the grid for my layout instead of using a fr
 - #### Wireframes
 
 - Mobile views:
-![Wireframe for Index page mobile drawn with paper and pencil.](Assets\wireFrames\indexMobileView.png)
+![Wireframe for Index page mobile drawn with paper and pencil.](indexMobileView.png)
 ![Wireframe for Contact page mobile drawn with paper and pencil.](Assets\wireFrames\contactMobileView.png?raw=true "Contact page for mobile")
 ![Wireframe for Skills page mobile drawn with paper and pencil.](Assets\wireFrames\skillsMobileView.png?raw=true "Skills page for mobile")
 ![Wireframe for Portfolio page mobile drawn with paper and pencil.](Assets\wireFrames\portfolioMobileView.png?raw=true "Portfolio page for mobile")
