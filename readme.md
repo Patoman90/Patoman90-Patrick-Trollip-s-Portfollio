@@ -47,7 +47,7 @@ I wanted to use what I learnt about the grid for my layout instead of using a fr
 
 #### Fonts
 
-    Georgia, Times New Roman, Times, serif.
+    font-family: sans-serif,  Georgia, Times New Roman, serif;
 
 #### Colors
 
@@ -195,6 +195,8 @@ I used git hub version control to save content to a remote repository on github 
 ### Acknowledgements
 
 I would like to acknowledge codecademy, w3schools, Mozilla Developer network and google chrome developer tools and search engine for helping me to find solutions to coding problems I was tasked with on my own.
+
+I had a code review done on codeCademy's community forums. I decided to change my code so that the fonts are consistant and easy to read but keep my skills page how it is.
 
 ## Disclaimer
 
